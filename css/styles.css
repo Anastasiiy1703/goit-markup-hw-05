@@ -560,29 +560,24 @@ body {
 .footer-form-button{
     min-width: 165px;
     height: 40px;
-    position: relative;
-    background-color: var(--primary-blue-color);
-    padding: 8px 24px;
-    color: var(--primary-white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.64px;
-    border-radius: 4px;
-    border: none;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-white-color);
     cursor: pointer;
-    margin-right: 159px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px 24 px;
+    background-color: var(--primary-blue-color);
+    border: none;
+    border-radius: 4px;
 }
 
 .footer-form-icon{
+    margin-left: 16px;
     fill: var(--primary-white-color);
     background-color: var(--primary-blue-color);
-    position: absolute;
-    margin-left: 16px;
     
 }
 
@@ -807,8 +802,7 @@ body {
 
 .form-title{
     display: block;
-    margin-bottom: 16px;
-    margin-top: 48px;
+
     width: 360px;
     height: 24px;
     color: var(--primary-dark-color);
@@ -946,12 +940,13 @@ border-color: var(--primary-blue-color);
     opacity: 0;
 }
 
-.modal-form-checkbox:checked + .modal-form-custome-checkbox{
-border-color: var(--primary-blue-color);
-background-color: var(--primary-blue-color);
+.modal-form-checkbox:checked + .modal-form-egreement-description .modal-form-custome-checkbox{
+fill: var(--primary-button-background);
+background-color: var(--primary-button-color);
+border: none;
 }
 
-.modal-form-checkbox:checked + .modal-form-custome-checkbox > .modai-form-checkbox-icon{
+.modal-form-checkbox:checked +  .modal-form-egreement-description .modal-form-custome-checkbox > .modai-form-checkbox-icon{
     opacity: 1;
 }
 
