@@ -802,7 +802,7 @@ body {
 
 .form-title{
     display: block;
-
+    margin-bottom: 16px;
     width: 360px;
     height: 24px;
     color: var(--primary-dark-color);
